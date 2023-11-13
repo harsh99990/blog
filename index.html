@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+      <title>Blog</title>
+      <link rel="stylesheet" href="slick/slick.css">
+      <link rel="stylesheet" href="slick/slick-theme.css">
+      <link rel="stylesheet" href="css/style.css">
+      
+      <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/fontawesome.min.css">
+      <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
+     
+      
+   </head>
+   <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentcolor">
+            <path d="M0 0h24v24H0V0z" fill="none"></path>
+            <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path>
+         </svg>
+      </button>
+      <header class="navigation_menu">
+         <div class="header_menu">
+            <div class="first_menu">
+               <div class="container">
+                  <div class="contact_menu">
+                     <div class="first_half">
+                        <ul class="location">
+                           <li>
+                              <a href="#" class="anchor">
+                              <img src="images/icons/icon-mail-blue.png" alt="mail_icon">
+                              </a>
+                           </li>
+                           <li>
+                              <p>
+                                 <a href="" style="text-decoration: none; color: white; font-family: 'Montserrat-Regular'; font-size: 13px;"> 2835 vidor Ave, San
+                                 Antorio, TX 78216 </a>
+                              </p>
+                           </li>
+                           <li>
+                              <a href="#" class="anchor">
+                              <img src="images/icons/icon-phone.png" alt="phone_icon">
+                              </a>
+                           </li>
+                           <li>
+                              <p>
+                                 <a href="" style="text-decoration: none; color: white; font-family: 'Montserrat-Regular'; font-size: 13px;"> Phone +1 (100) 380-790
+                                 </a>
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="second_half">
+                        <div>
+                        <ul class="follow_us">
+                           <li>
+                              <p style="font-family: 'Montserrat-Regular'; font-size: 13px;">Follow us:</p>
+                           </li>
+                           <li>
+                              <a href="#" class="anchor"><img src="images/icons/icon-fb.png" alt="fb_icon"></a>
+                           </li>
+                           <li>
+                              <a href="#" class="anchor"><img src="images/icons/icon-twitter-small.png"
+                                 alt="twitter_icon"></a>
+                           </li>
+                           <li>
+                              <a href="#" class="anchor"><img src="images/icons/icon-linkedin.png"
+                                 alt="linked_in_icon"></a>
+                           </li>
+                           <li>
+                              <a href="#" class="anchor"><img src="images/icons/icon-insta.png" alt="insta_icon"></a>
+                           </li>
+                        </ul>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="second_menu">
+               <div class="container">
+                  <div class="menu">
+                     <div class="menu_first_half">
+                        <ul class="header_list_logo">
+                           <li>
+                              <a href="#" class="anchor"><img src="images/icons/icon-$-small.png" alt="logo"></a>
+                           </li>
+                           <li>
+                              <a href="#" class="anchor_text">Investor</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="menu_second_half">
+                        <div class="list">
+                           <ul class="header_list">
+                              <li class="active">
+                                 <a href="#" class="anchor">home</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="anchor">pages</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="anchor">blog</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="anchor">portfolio</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="anchor">shop</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="anchor">features</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="anchor">element</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="cart">
+                           <a href="#"><img src="images/icons/icon-cart.png" alt="cart_icon"></a>
+                        </div>
+                        <div class="search">
+                           <a href="#"><img src="images/icons/icon-search.png" alt="search_icon"></a>
+                        </div>
+                        <!-- mobile  menu start -->
+                        <!-- Overlay content -->
+                        <div id="myNav" class="overlay">
+                           <!-- Button to close the overlay navigation -->
+                           <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                           <a href="javascript:void(0)" onclick="close_menu()" class="closebtn" id="close_menu">
+                              <div class="strip burger-strip">
+                                 <div></div>
+                                 <div></div>
+                                 <div></div>
+                              </div>
+                           </a>
+                           <!-- Overlay content -->
+                           <div class="overlay-content">
+                              <a href="#">HOME</a>
+                              <a href="#">PAGES</a>
+                              <a href="#">BLOG</a>
+                              <a href="#">PORTFOLIO</a>
+                              <a href="#">SHOP</a>
+                              <a href="#">FEATURES</a>
+                              <a href="#">ELEMENTS</a>
+                           </div>
+                        </div>
+                        <a href="javascript:void(0)" class="openbtn" onclick="open_menu()" id="openbtn">
+                           <div class="strip burger-strip">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </header>
+      
+
+      <div class="home_section">
+        <div class="container">
+            <div class="home_section_start">
+                <div class="leftinfo">
+                    <P>NEWS</P>
+                </div>
+                <div class="rightinfo">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><i class="fa fa-angle-right" style="color: #15BCC6;"></i><a href="#">NEWS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="site-content">
+            <div class="posts">
+                  <div class="post_1">
+                        <div class="datepart">
+                           <button class="date">09</button>
+                           <button class="month">nov</button>
+                        </div>
+                        <div class="post_1_start">
+                           <div>
+                              <img src="../images/blog-1.jpg" alt="">
+                           </div>
+                           <div class="postinfo">
+                              <div>
+                                    <p class="postinfo_p">
+                                       asia shares fail to bounce with wall street
+                                    </p>
+                              </div>
+                              <div>
+                                    <p class="comments">
+                                       in finance &nbsp;&nbsp;&nbsp; / &nbsp;&nbsp;&nbsp; by dudoan &nbsp;&nbsp;&nbsp;
+                                       /
+                                       &nbsp;&nbsp;&nbsp; 3 comments
+                                    </p>
+                              </div>
+                              <div>
+                                    <p class="data">
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis,
+                                       felis at
+                                       lobortis vestibulum, eros neque malesuada diam, vel varius nulla dolor quis
+                                       urna.
+                                       Vivamus a consectetur enim, id tristique risus. Phasellus mi justo, tincidunt at
+                                       porttitor ornare, porta sed elit. Sed neque ligula, ullamcorper sed imperdiet
+                                       ut,
+                                       suscipit ut quam. Praesent ut purus quis magna facilisis porttitor. Etiam
+                                       interdum
+                                       nibh ligula, ut molestie velit efficitur eu. Cras in augue tempor, ultricies
+                                       nunc
+                                       laoreet, dapibus velit. Nunc vel pharetra nisl. Cras fringilla velit odio, id
+                                       semper
+                                       enim placerat id.
+
+                                    </p>
+                              </div>
+                              <div class="btn-readmore">
+                                    <a href="#" class="readmorebtn">read more</a>
+                              </div>
+
+                           </div>
+                        </div>
+                  </div>
+                  <hr class="hr">
+
+                  <div class="post_1">
+                        <div class="datepart">
+                           <button class="date">09</button>
+                           <button class="month">nov</button>
+                        </div>
+                        <div class="post_1_start">
+                           <div>
+                              <img src="../images/blog-2.jpg" alt="">
+                           </div>
+                           <div class="postinfo">
+                              <div>
+                                    <p class="postinfo_p">
+                                       dollar slips versus yen as trade tenstion outlook
+                                    </p>
+                              </div>
+                              <div>
+                                    <p class="comments">
+                                       in finance &nbsp;&nbsp;&nbsp; / &nbsp;&nbsp;&nbsp; by dudoan &nbsp;&nbsp;&nbsp;
+                                       /
+                                       &nbsp;&nbsp;&nbsp; 3 comments
+                                    </p>
+                              </div>
+                              <div>
+                                    <p class="data">
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis,
+                                       felis at
+                                       lobortis vestibulum, eros neque malesuada diam, vel varius nulla dolor quis
+                                       urna.
+                                       Vivamus a consectetur enim, id tristique risus. Phasellus mi justo, tincidunt at
+                                       porttitor ornare, porta sed elit. Sed neque ligula, ullamcorper sed imperdiet
+                                       ut,
+                                       suscipit ut quam. Praesent ut purus quis magna facilisis porttitor. Etiam
+                                       interdum
+                                       nibh ligula, ut molestie velit efficitur eu. Cras in augue tempor, ultricies
+                                       nunc
+                                       laoreet, dapibus velit. Nunc vel pharetra nisl. Cras fringilla velit odio, id
+                                       semper
+                                       enim placerat id.
+
+                                    </p>
+                              </div>
+                              <div class="btn-readmore">
+                                    <a href="#" class="readmorebtn">read more</a>
+                              </div>
+
+                           </div>
+                        </div>
+                  </div>
+                  <hr class="hr">
+
+                  <div class="post_1">
+                        <div class="datepart">
+                           <button class="date">09</button>
+                           <button class="month">nov</button>
+                        </div>
+                        <div class="post_1_start">
+                           <div>
+                              <img src="../images/blog-3.jpg" alt="">
+                           </div>
+                           <div class="postinfo">
+                              <div>
+                                    <p class="postinfo_p">
+                                       wall street taking notes on spotify debut
+                                    </p>
+                              </div>
+                              <div>
+                                    <p class="comments">
+                                       in finance &nbsp;&nbsp;&nbsp; / &nbsp;&nbsp;&nbsp; by dudoan &nbsp;&nbsp;&nbsp;
+                                       /
+                                       &nbsp;&nbsp;&nbsp; 3 comments
+                                    </p>
+                              </div>
+                              <div>
+                                    <p class="data">
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis,
+                                       felis at
+                                       lobortis vestibulum, eros neque malesuada diam, vel varius nulla dolor quis
+                                       urna.
+                                       Vivamus a consectetur enim, id tristique risus. Phasellus mi justo, tincidunt at
+                                       porttitor ornare, porta sed elit. Sed neque ligula, ullamcorper sed imperdiet
+                                       ut,
+                                       suscipit ut quam. Praesent ut purus quis magna facilisis porttitor. Etiam
+                                       interdum
+                                       nibh ligula, ut molestie velit efficitur eu. Cras in augue tempor, ultricies
+                                       nunc
+                                       laoreet, dapibus velit. Nunc vel pharetra nisl. Cras fringilla velit odio, id
+                                       semper
+                                       enim placerat id.
+
+                                    </p>
+                              </div>
+                              <div class="btn-readmore">
+                                    <a href="#" class="readmorebtn">read more</a>
+                              </div>
+
+                           </div>
+                        </div>
+                  </div>
+                  <hr class="hr">
+
+                  <div class="nextpages">
+                     <div class="button-next">
+                         <a href="#">«</a>
+                         <a class="active" href="#">1</a>
+                         <a href="#">2</a>
+                         <a href="#">3</a>
+
+                         <a href="#">»</a>
+                     </div>
+                 </div>
+                  
+
+                  
+            </div>
+
+
+            <aside class="sidebar">
+               <div class="search-bar">
+                  <input type="text" placeholder="Search..." class="search-input">
+                  
+
+               </div>
+               <div class="insta-section">
+                  <div>
+                      <h4 class="h4-head">
+                          instagram photos
+                      </h4>
+                  </div>
+                  <div class="insta-galary">
+                      <img src="images/mini-img-1.png" alt="insta-img-6">
+                      <img src="images/mini-img-2.png" alt="">
+                      <img src="images/mini-img-3.png" alt="">
+                      <img src="images/mini-img-4.png" alt="">
+                      <img src="images/mini-img-5.png" alt="">
+                      <img src="images/mini-img-6.png" alt="">
+                  </div>
+
+               </div>
+               <div class="latest-blog-post">
+                  <div>
+                      <h4 class="h4-head">
+                          latest post
+                      </h4>
+                  </div>
+                  <div class="blog-post">
+                      <div class="blog-post-img">
+                          <img src="images/edit-img.png" alt="">
+                      </div>
+                      <div class="blog-post-info">
+                          <p>
+                              <b> asia shares fail to bounce with wall street</b>
+                          </p>
+                          <p id="date">
+                              02 feb 2018
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="blog-post">
+                      <div class="blog-post-img">
+                          <img src="images/edit-img.png" alt="">
+                      </div>
+                      <div class="blog-post-info">
+                          <p>
+                              <b>
+                                  dollor slips versus yen as trade tensions outlook
+                              </b>
+                          </p>
+                          <p id="date">
+                              02 feb 2018
+                          </p>
+                      </div>
+                  </div>
+
+
+                  <div class="blog-post">
+                      <div class="blog-post-img">
+                          <img src="images/edit-img.png" alt="">
+                      </div>
+                      <div class="blog-post-info">
+                          <p>
+                              <b>
+                                  wall street taking notes on spotify debut
+                              </b>
+                          </p>
+                          <p id="date">
+                              02 feb 2018
+                          </p>
+                      </div>
+                  </div>
+                  </div>
+
+                  <div class="tags-part">
+                     <div>
+                         <h4 class="h4-head">
+                             popular tags
+                         </h4>
+                     </div>
+                     <div class="tags-start">
+                         <a href="#" class="tag">estate</a>
+                         <a href="#" class="tag">income</a>
+                         <a href="#" class="tag">education</a>
+                         <a href="#" class="tag">business</a>
+                         <a href="#" class="tag">development</a>
+                         <a href="#" class="tag">loan</a>
+                         <a href="#" class="tag">taxes</a>
+                         <a href="#" class="tag">crow</a>
+                         <a href="#" class="tag">consulting</a>
+                         <a href="#" class="tag">insurance</a>
+                         <a href="#" class="tag">plan</a>
+                     </div>
+
+                  </div>
+            </aside>
+        </div>
+    </div>
+
+      
+      
+
+
+      
+    
+
+    
+
+    <footer>
+         <div class="footer_section">
+            
+            <div class="line-2">
+               <div class="container">
+                  <div class="second_line">
+                     <!-- part-1 -->
+                     <div class="part-1">
+                        <div class="logo_line">
+                           <a href="#"><img src="images/icons/icon-$.png" alt="logo"></a>
+                           <h2 class="h2-footer">
+                              investor
+                           </h2>
+                        </div>
+                        <div class="description_line">
+                           <p class="desc_p">
+                              we have a wide breadth of experience over 30 years providing finanical services.
+                           </p>
+                        </div>
+                        <div class="map_line">
+                           <a href="#"> <img src="images/icons/icon-location.png" alt="map_icon" height="16px" width="16px"></a>
+                           <p> <a href="#" class="footer_a"> 2835 vidor ave, san antonio </a></p>
+                        </div>
+                        <div class="mail_line">
+                           <a href="#"> <img src="images/icons/icon-mail.png" alt="mail_icon" height="16px"
+                              width="16px"></a>
+                           <p>
+                              <a href="#" class="footer_a"> support@finance.com</a>
+                           </p>
+                        </div>
+                        <div class="phone_line">
+                           <a href="#"> <img src="images/icons/icon-phone.png" alt="phone_icon" height="16px"
+                              width="16px"></a>
+                           <p>
+                              <a href="#" class="footer_a"> +1 (100)380-790 / 6:30 AM - 6:30 PM</a>
+                           </p>
+                        </div>
+                     </div>
+                     <!-- part-2 -->
+                     <div class="part-2">
+                        <div class="heading_line">
+                           <h4 style=" 
+                              font-family: 'Montserrat-Light';
+                              ">
+                              recent tweets
+                           </h4>
+                        </div>
+                        <div class="first_tweet">
+                           <div class="footer_img_line">
+                              <img src="images/tweet.png" alt="">
+                           </div>
+                           <div class="desc">
+                              <p class="tweet_p">
+                                 life is a story, make yours the best seller
+                              </p>
+                              <p class="tweet_p" style="color: gray; font-family: 'Montserrat-Light'; margin-top: 3%;">
+                                 15 june 2018
+                              </p>
+                           </div>
+                        </div>
+                        <div class="second_tweet">
+                           <div class="footer_img_line">
+                              <img src="images/tweet.png" alt="">
+                           </div>
+                           <div class="desc">
+                              <p class="tweet_p">
+                                 life is a story, make yours the best seller
+                              </p>
+                              <p class="tweet_p" style="color: gray; font-family: 'Montserrat-Light'; margin-top: 3%;">
+                                 15 june 2018
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- part-3 -->
+                     <div class="part-3">
+                        <div class="heading_line">
+                           <h4 style=" 
+                              font-family: 'Montserrat-Light';
+                              ">
+                              popular tags
+                           </h4>
+                        </div>
+                        <div class="tags_part">
+                           <a href="#" class="tags">estate </a>
+                           <a href="#" class="tags">education </a>
+                           <a href="#" class="tags">taxes </a>
+                           <a href="#" class="tags">loan </a>
+                           <a href="#" class="tags">grow </a>
+                           <a href="#" class="tags">insurance</a>
+                           <a href="#" class="tags">income </a>
+                           <a href="#" class="tags">plan</a>
+                           <a href="#" class="tags">consulting</a>
+                        </div>
+                     </div>
+                     <!-- part-4 -->
+                     <div class="part-4">
+                        <div class="heading_line">
+                           <h4 style=" 
+                              font-family: 'Montserrat-Light';
+                              ">
+                              photostream
+                           </h4>
+                           <div class="photostream">
+                              <img src="images/mini-img-1.png" alt="" height="100px" width="100px"
+                                 style="object-fit: cover;">
+                              <img src="images/mini-img-2.png" alt="" height="100px" width="100px"
+                                 style="object-fit: cover;">
+                              <img src="images/mini-img-3.png" alt="" height="100px" width="100px"
+                                 style="object-fit: cover;">
+                              <img src="images/mini-img-4.png" alt="" height="100px" width="100px"
+                                 style="object-fit: cover;">
+                              <img src="images/mini-img-5.png" alt="" height="100px" width="100px"
+                                 style="object-fit: cover;">
+                              <img src="images/mini-img-6.png" alt="" height="100px" width="100px"
+                                 style="object-fit: cover;">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="line-3">
+            <div class="container">
+               <div class="last_line">
+                  <div class="1-part_last_line">
+                     <p class="last_p">
+                        &#169; copyright <a href="#" style="color: white; font-family: 'Montserrat-Light'; text-decoration: none;"> finance. </a>
+                        design by &#64;doandu with love
+                     </p>
+                  </div>
+                  <div class="2-part_last_line">
+                     <ul class="last_ul" style="padding-left: 0;">
+                        <li class="last_li">
+                           <a href="#" class="tags_a">about us </a>
+                        </li>
+                        <li class="last_li">
+                           <a href="#" class="tags_a">terms</a>
+                        </li>
+                        <li class="last_li">
+                           <a href="#" class="tags_a">services</a>
+                        </li>
+                        <li class="last_li">
+                           <a href="#" id="last" class="tags_a"> contacts</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+    </footer>
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="slick/slick.min.js"></script>
+      <script src="slick/slick.js"></script>
+      <script>
+         $('.one-time').slick({
+             dots: false,
+             arrows: false,
+             infinite: true,
+             autoplay: true,
+             autoplaySpeed: 1000,
+             speed: 300,
+             slidesToShow: 1,
+         
+         });
+      </script>
+      
+      
+      <script>
+         function open_menu() {
+             document.getElementById("myNav").style.width = "100%";
+         }
+         /* Close when someone clicks on the "x" symbol inside the overlay */
+         function close_menu() {
+             document.getElementById("myNav").style.width = "0%";
+         }
+      </script>
+      <script>
+         //Get the button
+         var mybutton = document.getElementById("myBtn");
+         
+         // When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+           if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+             mybutton.style.opacity = "100%";
+           } else {
+             mybutton.style.opacity = "0%";
+           }
+         }
+         
+         // When the user clicks on the button, scroll to the top of the document
+         function topFunction() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+         }
+      </script>
+      
+     
+   </body>
+</html>
